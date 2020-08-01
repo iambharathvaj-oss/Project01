@@ -1,0 +1,49 @@
+// you could also use img as a selector
+.img-responsive {
+  width: 100%;
+}
+
+/* // this is the selector of your div's */
+.col-sm-12 {
+  padding: 0;
+}
+/* // the default column count is 1 and there should not be a space between the columns */
+.card-columns {
+  column-count: 1;
+  column-gap: 0;
+}
+
+/* // for medium devices and larger set the count to two */
+@media (min-width: 768px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+/* //reset card's margin bottom */
+.card {
+  margin: 0 !important;
+}
+
+/* // scale images properly to fit the divs */
+img {
+  width: 100%;
+  max-width: 100%;
+}
+.content {
+   position: absolute; /* Position the background text */
+   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+   /* background: rgb(0, 0, 0); Fallback color */
+   /* background: rgba(0, 0, 0, 0.5); Black background with 0.5 opacity */
+   color: #f1f1f1; /* Grey text */
+   width: 100%; /* Full width */
+   padding: 10px; /* Some padding */
+ }
+.heading-text {
+   background-color: darkcyan;
+   color: white;
+   padding: 5px 10px;
+   text-transform: uppercase;
+   border-radius: 2px;
+   font-size: 20px;
+}
